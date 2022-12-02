@@ -39,3 +39,8 @@
     > ***Network intrusions:*** No matter how good your security is, there is always a chance for an intrusion. An intrusion can occur when a user clicks on a malicious link or when an attacker exploits a public server. Either way, when an intrusion occurs, we must detect it as soon as possible to prevent further damage.
     
     Security operations cover various tasks to ensure protection; one such task is threat intelligence.
+
+2. ***Threat Intelligence***
+     > **Intelligence** refers to information you gather about actual and potential enemies. A **Threat** is any action that can disrupt or adversely affect a system. 
+     
+     > **Threat intelligence** aims to gather information to help the company better prepare against potential adversaries. The purpose would be to achieve a threat-informed defense.
