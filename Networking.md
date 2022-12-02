@@ -35,6 +35,44 @@
 
 ![mac_address](https://user-images.githubusercontent.com/35003220/205228818-77e86395-bf0e-498d-8508-957bfbff7655.png)
 
+## What is Local Area Network (LAN) ?
+>A local area network is a computer network that interconnects computers within a limited area such as a residence, school, laboratory, university campus or office building.
+
+## What are Network Topologies ?
+>In short, Network topology is a design or look of the network at hand.
+
+>A network topology is the physical and logical arrangement of nodes and connections in a network.
+
+### 1. Star Toplogy
+>The main premise of a star topology is that devices are individually connected via a central networking device such as a switch or hub.
+
+>This topology is the most commonly found today because of its reliability and scalability - despite the cost.
+
+>Any information sent to a device in this topology is sent via the central device to which it connects.
+
+>Because more cabling & the purchase of dedicated networking equipment is required for this topology, it is more expensive than any of the other topologies.
+
+>This topology is much more scalable in nature, which means that it is very easy to add more devices as the demand for the network increases.
+
+![star](https://user-images.githubusercontent.com/35003220/205232236-91e00f97-670e-47b1-abfc-b77b2774efc4.png)
+
+### 2. Bus Topology
+>This type of connection relies upon a single connection which is known as a backbone cable.
+
+>This type of topology is similar to the leaf off of a tree in the sense that devices (leaves) stem from where the branches are on this cable.
+
+>Because all data destined for each device travels along the same cable, it is very quickly prone to becoming slow and bottlenecked if devices within the topology are simultaneously requesting data.
+
+>This bottleneck also results in very difficult troubleshooting because it quickly becomes difficult to identify which device is experiencing issues with data all travelling along the same route.
+
+![bus](https://user-images.githubusercontent.com/35003220/205232772-b28f0d1a-b38b-400f-86f8-a80123061cbf.png)
+
+
+
+
+
+
+
 
 
 
