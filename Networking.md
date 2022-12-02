@@ -67,12 +67,74 @@
 
 ![bus](https://user-images.githubusercontent.com/35003220/205232772-b28f0d1a-b38b-400f-86f8-a80123061cbf.png)
 
+### 3. Ring Topology
+>The ring topology (also known as token topology) boasts some similarities.
 
+>Devices such as computers are connected directly to each other to form a loop, meaning that there is little cabling required and less dependence on dedicated hardware such as within a star topology. 
 
+>A ring topology works by sending data across the loop until it reaches the destined device, using other devices along the loop to forward the data.
 
+>A fault such as cut cable, or broken device will result in the entire networking breaking. 
 
+![ring](https://user-images.githubusercontent.com/35003220/205233394-b1ada41f-b2d6-4cae-83b4-2946485e6d17.png)
 
+## What is Switch ? 
+>Switches are dedicated devices within a network that are designed to aggregate multiple other devices such as computers, printers, or any other networking-capable device using ethernet. 
 
+>These various devices plug into a switch's port. 
+
+>witches are usually found in larger networks such as businesses, schools, or similar-sized networks, where there are many devices to connect to the network. 
+
+>Switches can connect a large number of devices by having ports of 4, 8, 16, 24, 32, and 64 for devices to plug into.
+
+> Switches keep track of what device is connected to which port. This way, when they receive a packet, instead of repeating that packet to every port like a hub would do, it just sends it to the intended target, thus reducing network traffic.
+
+![switches](https://user-images.githubusercontent.com/35003220/205233967-f39cfd80-bf6d-4aca-a596-81881a593d4e.png)
+
+## What is Router ?
+>It's a router's job to connect networks and pass data between them. It does this by using routing (hence the name router!).
+
+>Routing is the label given to the process of data travelling across networks. 
+
+>Routing involves creating a path between networks so that this data can be successfully delivered.
+
+<img width="584" alt="9oRZ5dEIu28zVANhPLh_4pKrOxAr6dFbvslV24RsyuKqC38SqfB6xjuV9zEQf9TxjD4fm2VZIBN8NQvGLTfIeWapeJGwpu6xMpEr8ofRIBA9U7J3mUU201b4J-aogTMApwtoruXX" src="https://user-images.githubusercontent.com/35003220/205234586-bdc0edc4-17f1-4d64-94b5-d85e91efbc8c.png">
+
+## What is Modem ?
+>A modem is a device that modulates or demodulates the signal. It maintains a dedicated connection with the ISP to get the internet connection for home or business.
+
+>The modem is placed between the telephone line and the computer system or router.
+
+>It connects the ISP(internet service provider) to the home network directly for the single PC. Or it is connected with the router to connect with multiple devices.
+
+## What is ARP protocol ?
+>The ARP protocol or Address Resolution Protocol for short, is the technology that is responsible for allowing devices to identify themselves on a network.
+
+>Simply, the ARP protocol allows a device to associate its MAC address with an IP address on the network.
+
+## How does ARP Work ?
+>Each device within a network has a ledger to store information on, which is called a cache. In the context of the ARP protocol, this cache stores the identifiers of other devices on the network.
+
+>In order to map these two identifiers together (IP address and MAC address), the ARP protocol sends two types of messages:
+
+1. ARP Request
+
+2. ARP Reply
+
+>When an ARP request is sent, a message is broadcasted to every other device found on a network by the device, asking whether or not the device's MAC address matches the requested IP address.
+
+>If the device does have the requested IP address, an ARP reply is returned to the initial device to acknowledge this. The initial device will now remember this and store it within its cache (an ARP entry). 
+
+## What is DHCP server & how it works ?
+>IP addresses can be assigned either manually, by entering them physically into a device, or automatically and most commonly by using a DHCP (Dynamic Host Configuration Protocol) server.
+
+>When a device connects to a network, if it has not already been manually assigned an IP address, it sends out a request (DHCP Discover) to see if any DHCP servers are on the network.
+
+>The DHCP server then replies back with an IP address the device could use (DHCP Offer).
+
+>The device then sends a reply confirming it wants the offered IP Address (DHCP Request), and then lastly, the DHCP server sends a reply acknowledging this has been completed, and the device can start using the IP Address (DHCP ACK).
+
+![DHCP](https://user-images.githubusercontent.com/35003220/205316287-8fec7658-6357-4632-91bd-b6f614dd0851.png)
 
 
 
