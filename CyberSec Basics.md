@@ -26,7 +26,7 @@
 
 ### Areas of Defensive Security :
 
-1. ***Security Operations Center (SOC)
+1. ***Security Operations Center (SOC)***
 
     A Security Operations Center (SOC) is a team of cyber security professionals that monitors the network and its systems to detect malicious cyber security events. Some of the main areas of interest for a SOC are:
 
