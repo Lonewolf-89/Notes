@@ -136,6 +136,7 @@
 
 ![DHCP](https://user-images.githubusercontent.com/35003220/205316287-8fec7658-6357-4632-91bd-b6f614dd0851.png)
 
+
 ## OSI Model
 >The OSI model (or Open Systems Interconnection Model) is an absolute fundamental model used in networking.  This critical model provides a framework dictating how all networked devices will send, receive and interpret data.
 
@@ -147,7 +148,7 @@
     Transport     -  Try  
     Network       -  New
     Data Link     -  Dominoz
-    Physical      -  Pizza+
+    Physical      -  Pizza
     
 ### Layer 7 -- Application
 >The application layer of the OSI model essentially provides networking options to programs running on a computer.
@@ -179,7 +180,7 @@
 
 >TCP would usually be chosen for situations where accuracy is favoured over speed (e.g. file transfer, or loading a webpage), and UDP would be used in situations where speed is more important (e.g. video streaming).
 
->With a protocol selected, the transport layer then divides the transmission up into bite-sized pieces (**over TCP these are called segments, over UDP they're called datagrams**), which makes it easier to transmit the message successfully. 
+>With a protocol selected, the transport layer then divides the transmission up into bite-sized pieces (***over TCP these are called segments, over UDP they're called datagrams***), which makes it easier to transmit the message successfully. 
 
 ### Layer 3 -- Network
 >The network layer is responsible for locating the destination of your request.
@@ -219,9 +220,63 @@
 
 >The additional information has been added on sender’s side, starting from Application layer to Physical layer.
 
-![PDU-283x300](https://user-images.githubusercontent.com/35003220/205419010-6f8fbdf4-1cd5-442f-ab29-27f735e74ddf.png)
+![image](https://user-images.githubusercontent.com/35003220/205419182-6c67f249-89d5-476f-a628-4376b809d538.jpg)
 
+### How Data Encapsulation works ?
+1. There will be no additional information added in the user’s data in the Application layer in TCP/IP model or Application, Presentation, Session layers in OSI model.
+2. Then Session layer sends data to Transport layer.
+3. In the Transport layer, the data broken up into different pieces. It adds the header in each of the broken data, which contains information like source port, destination port, sequence number, etc. Now, everything combined to a new form.
+4. The encapsulated data in Transport layer is called Segments or Datagrams. If the transmission uses TCP, then it is called Segments, or UDP is called Datagrams.
+5. Now, the data will travel down and reach Network layer. Here, layer 3 header is added. That contains information like source IP, destination IP, and so on. This information combines into a new form. The encapsulated data in the network layer is called Packets.
+6. Now, network layer sends packet to Data Link layer When it enters into data link layer, a new header(Layer 2) is added.
+7. Also, a trailer is added. It contains information like source MAC address, destination MAC address, and so on. The trailer is used for error checking. The encapsulated data in the data link layer is called Frames.
+8. The physical layer takes frames from Data Link layer. The encapsulated data in the physical layer is called Bits.
 
+That is how encapsulation takes place.
+
+## What is PDU (Protocol Data Unit)?
+>The encapsulated data is called by different names when it travels down following layers.
+
+>Those names are called Protocol Data Unit. The following table shows the name of encapsulated data in each layer.
+
+![PDU-283x300](https://user-images.githubusercontent.com/35003220/205419580-b5673bd9-abc0-482a-aef8-e0ef1fbf391f.png)
+
+## What is De-Encapsulation ?
+>De-encapsulation is the exact reverse process of encapsulation.
+
+>The additional information added on the sender’s side (during encapsulation) gets removed when it travels on the receiver’s side from the Physical layer to the Application layer.
+
+## TCP/IP Model
+>The TCP/IP model is, in many ways, very similar to the OSI model. It's a few years older, and serves as the basis for real-world networking.
+
+>TCP/IP takes its name from the two most important of these: the Transmission Control Protocol (which we touched upon earlier in the OSI model) that controls the flow of data between two endpoints, and the Internet Protocol, which controls how packets are addressed and sent.
+
+>The TCP/IP model consists of four layers: Application, Transport, Internet and Network Interface.
+
+![image-4](https://user-images.githubusercontent.com/35003220/205419868-1a29cf85-d410-422f-84bc-7c99aee639b0.png)
+
+The two models (OSI & TCP/IP) match up something like this:
+
+![image-3](https://user-images.githubusercontent.com/35003220/205419932-6523f88f-d78a-4266-938a-4a27065b7137.png)
+
+>The processes of encapsulation and de-encapsulation work in exactly the same way with the TCP/IP model as they do with the OSI model.
+
+>TCP is a connection-based protocol. In other words, before you send any data via TCP, you must first form a stable connection between the two computers. The process of forming this connection is called the ***three-way handshake***.
+
+### Three Way Handshake 
+>When you attempt to make a connection, your computer first sends a special request to the remote server indicating that it wants to initialise a connection.
+
+>This request contains something called a SYN (short for synchronise) bit, which essentially makes first contact in starting the connection process.
+
+>The server will then respond with a packet containing the SYN bit, as well as another "acknowledgement" bit, called ACK. 
+
+>Finally, your computer will send a packet that contains the ACK bit by itself, confirming that the connection has been setup successfully.
+
+>With the three-way handshake successfully completed, data can be reliably transmitted between the two computers.
+
+>Any data that is lost or corrupted on transmission is re-sent, thus leading to a connection which appears to be lossless.
+
+![handshake](https://user-images.githubusercontent.com/35003220/205421263-9b2e56fc-667d-47ee-a0fa-8f9b5aad4d8f.png)
 
 
 
